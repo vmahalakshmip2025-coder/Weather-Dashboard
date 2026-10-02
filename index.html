@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Real-time Weather Dashboard">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-container">
+
+        <h1>Weather Dashboard</h1>
+
+        <p>Search for a city to see its current weather.</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+                aria-label="Enter city name">
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+        <p id="loading">Loading...</p>
+
+        <p id="error"></p>
+
+        <section id="weatherResult">
+
+            <h2 id="cityName">City</h2>
+
+            <p id="countryName">Country</p>
+
+            <div class="weather-cards">
+
+                <div class="weather-card">
+                    <h3>🌡️ Temperature</h3>
+                    <p id="temperature">-- °C</p>
+                </div>
+
+                <div class="weather-card">
+                    <h3>💧 Humidity</h3>
+                    <p id="humidity">-- %</p>
+                </div>
+
+                <div class="weather-card">
+                    <h3>💨 Wind Speed</h3>
+                    <p id="windSpeed">-- km/h</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
